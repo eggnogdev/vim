@@ -49,12 +49,12 @@ nnoremap <leader>pv :Ex<cr>
 nnoremap j jzz
 nnoremap k kzz
 " Autocomplete brackets and quotation marks
-inoremap ( ()<ESC>hli
-inoremap { {}<ESC>hli
-inoremap [ []<ESC>hli
-inoremap ' ''<ESC>hli
-inoremap " ""<ESC>hli
-inoremap ` ``<ESC>hli
+" inoremap ( ()<ESC>hli
+" inoremap { {}<ESC>hli
+" inoremap [ []<ESC>hli
+" inoremap ' ''<ESC>hli
+" inoremap " ""<ESC>hli
+" inoremap ` ``<ESC>hli
 " Don't exit visual mode after indenting
 vnoremap > >gv
 vnoremap < <gv
