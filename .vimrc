@@ -45,6 +45,9 @@ hi Visual cterm=NONE ctermbg=white ctermfg=black
 " Remappings
 nnoremap <leader>Sh :split<cr>
 nnoremap <leader>Sv :vsplit<cr>
+nnoremap <leader>pv :Ex<cr>
+nnoremap j jzz
+nnoremap k kzz
 " Autocomplete brackets and quotation marks
 inoremap ( ()<ESC>hli
 inoremap { {}<ESC>hli
