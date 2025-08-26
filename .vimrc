@@ -9,6 +9,8 @@ colorscheme nord
 
 set nocompatible
 let mapleader=' ' "use space for leader key
+" Disable swap file
+set noswapfile
 " Cursor behaviour
 :autocmd InsertEnter,InsertLeave * set cul!
 " General visual look of Vim
