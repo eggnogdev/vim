@@ -48,6 +48,8 @@ nnoremap <leader>Sv :vsplit<cr>
 nnoremap <leader>pv :Ex<cr>
 nnoremap j jzz
 nnoremap k kzz
+nnoremap <C-d> <C-d>zz
+nnoremap <C-u> <C-u>zz
 " Autocomplete brackets and quotation marks
 " inoremap ( ()<ESC>hli
 " inoremap { {}<ESC>hli
