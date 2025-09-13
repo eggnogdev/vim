@@ -1,14 +1,20 @@
+set nocompatible
+
 call plug#begin()
 
 Plug 'arcticicestudio/nord-vim'
 Plug 'tpope/vim-sensible'
+Plug 'sheerun/vim-polyglot'
+Plug 'takac/vim-hardtime'
+Plug 'tpope/vim-commentary'
 
 call plug#end()
 
 colorscheme nord
 
-set nocompatible
 let mapleader=' ' "use space for leader key
+let g:lsp_semantic_enable=1
+let g:hardtime_default_on = 1
 " Disable swap file
 set noswapfile
 " Cursor behaviour
@@ -45,20 +51,11 @@ set wildmenu
 " Colors
 hi Visual cterm=NONE ctermbg=white ctermfg=black
 " Remappings
-nnoremap <leader>Sh :split<cr>
-nnoremap <leader>Sv :vsplit<cr>
-nnoremap <leader>pv :Ex<cr>
+nnoremap <leader>x :Ex<cr>
 nnoremap j jzz
 nnoremap k kzz
 nnoremap <C-d> <C-d>zz
 nnoremap <C-u> <C-u>zz
-" Autocomplete brackets and quotation marks
-" inoremap ( ()<ESC>hli
-" inoremap { {}<ESC>hli
-" inoremap [ []<ESC>hli
-" inoremap ' ''<ESC>hli
-" inoremap " ""<ESC>hli
-" inoremap ` ``<ESC>hli
 " Don't exit visual mode after indenting
 vnoremap > >gv
 vnoremap < <gv
